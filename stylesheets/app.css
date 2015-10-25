@@ -10163,18 +10163,6 @@ p span {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 640px) {
-  /* line 376, ../scss/components/_general.scss */
-  .inside-item {
-    min-height: 100px;
-    padding-top: 10px;
-  }
-  /* line 380, ../scss/components/_general.scss */
-  .inside-item p {
-    position: inherit;
-    padding-left: 0;
-  }
-}
 /*** Button styles ***/
 /* line 3, ../scss/components/_buttons.scss */
 .button {
@@ -10285,12 +10273,19 @@ p span {
     font-size: 1.375rem;
   }
 
-  /* line 54, ../scss/components/_mediaqueries.scss */
+  /* line 53, ../scss/components/_mediaqueries.scss */
+  .insert-item .inside-item {
+    min-height: 100px;
+    padding-top: 10px;
+  }
+  /* line 57, ../scss/components/_mediaqueries.scss */
   .insert-item .inside-item p {
     position: inherit;
+    position: inherit;
+    padding-left: 0;
   }
 
-  /* line 60, ../scss/components/_mediaqueries.scss */
+  /* line 65, ../scss/components/_mediaqueries.scss */
   .sidebar {
     padding-top: 10px;
   }
