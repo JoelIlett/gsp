@@ -1,0 +1,13 @@
+
+// Include default styles
+
+@import "settings";
+@import "foundation";
+
+
+// Include custom style components
+@import "components/header";
+@import "components/footer";
+@import "components/general";
+@import "components/buttons";
+@import "components/mediaqueries";

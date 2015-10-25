@@ -1,0 +1,386 @@
+/*** general custom stylesheet ***/
+
+.panel{
+	background-color: #f9f7f7;
+	border:none;
+	border-radius: 3px;
+}
+
+.view-wrap{
+	overflow: hidden;
+}
+
+.outer-slip{
+    margin-bottom: -15px;
+}
+
+.inner-slip{
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+	*:focus{
+    outline: 0;
+}
+
+/*** Fonts ***/
+
+@font-face{ 
+	font-family: 'Chelseamarket';
+	src: url('../fonts/chelseamarket-regular-webfont.eot');
+	src: url('../fonts/chelseamarket-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/chelseamarket-regular-webfont.woff') format('woff'),
+	     url('../fonts/chelseamarket-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/chelseamarket-regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'museo-thin';
+	src: url('../fonts/museo100-regular-webfont.eot');
+	src: url('../fonts/museo100-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/museo100-regular-webfont.woff') format('woff'),
+	     url('../fonts/museo100-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/museo100-regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'museo';
+	src: url('../fonts/museo300-regular-webfont.eot');
+	src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/museo300-regular-webfont.woff') format('woff'),
+	     url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/museo300-regular-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'museo-thick';
+	src: url('../fonts/museo700-regular-webfont.eot');
+	src: url('../fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/museo700-regular-webfont.woff') format('woff'),
+	     url('../fonts/museo700-regular-webfont.ttf') format('truetype'),
+	     url('../fonts/museo700-regular-webfont.svg#webfont') format('svg');
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Chelseamarket',  Arial, sans-serif;
+}
+
+p{
+	font-family: 'museo', Arial, sans-serif; 
+}
+
+
+h1{
+
+}
+
+h2{
+	font-size: rem-calc(28);
+	margin-bottom: 0;
+	color: $primary-color;
+}
+
+h3{
+	font-size: rem-calc(16);
+	&.blog-sub-title{
+		color: $secondary-color;
+		margin: 0 0 30px 0;
+	}
+}
+
+h4{
+	font-size: rem-calc(35);
+	font-weight:100;
+}
+
+h5{
+	font-size: rem-calc(24);
+	color: $iron;
+}
+
+h6{
+
+}
+
+p{
+	font-size: rem-calc(15);
+	color: #989898;
+	line-height: 1.4;
+	margin-bottom: 30px;
+
+	&.darker-body-text{	
+		color: #353534;
+	}
+
+	span{
+		color: #222222;
+	}
+}
+
+/*** Helper classes ***/
+
+.bottom-margin{
+	margin-bottom: 30px;
+}
+
+.avatar{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.clear{
+	clear: both;
+	margin-bottom: 30px;
+}
+
+/*** Main content ***/
+
+.main-content{
+	margin-top: 40px;
+
+	.single-post{
+		padding: 10px 20px 0 20px;
+		margin: 0 10px 30px 0;
+
+		.blog-post-content{
+			.post-image{
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+/** Sidebar ***/
+
+.sidebar{
+	background-color: #f9f7f7;
+	padding-top: 70px;
+
+	.sidebar-inside{
+		margin-top: 10px;
+		padding-left: 10px;
+	}
+
+	&:after{
+		content: " ";
+		width: 300%;
+		min-height: 9999px;
+		background-color: #F9F7F7;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: -1;
+	}
+
+	.timeline{
+
+		margin-bottom: 30px;
+		p{
+			color: #c6c6c6;
+			margin-bottom: 8px;
+
+			a.active{
+				color: $primary-color;
+				font-weight: 600;
+				font-size: rem-calc(20);
+
+				&:before{
+					content: " ";
+				    width: 0;
+				    height: 0;
+				    border-style: solid;
+				    border-width: 15px 30px 15px 0;
+				    border-color: transparent #f9f7f7 transparent transparent;
+				    position: absolute;
+				    left: -15px;
+				}
+			}
+		}
+	}
+
+	.tag-cloud-container{
+		.tag-cloud{
+			margin-bottom: 0;
+		}
+	}
+}
+
+/*** Edit styles ***/
+
+.editable{
+	border: 1px dotted #a6a6a6;
+	&:before{
+		content: " ";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 16px 14px 0 0;
+		border-color: #000000 transparent transparent transparent;
+		float: left;
+		margin-left: -21px;
+		margin-top: -11px;
+	}
+}
+
+.editable-option-container{
+	margin-bottom: 10px;
+}
+
+/*** Modal styles ***/
+
+#blogModal{
+	padding: 20px;
+
+	#modalTitle{
+		margin-bottom: 40px;
+	}
+}
+
+.reveal-modal-bg{
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.reveal-modal{
+	&:before{
+		content: " ";
+		background: url('../images/modal-top.png') repeat-x center top;
+		width: 100%;
+		height: 20px;
+		position:absolute;
+		top: -5px;
+		left: 0px;
+	}
+
+	&:after{
+		content: " ";
+		background: url('../images/modal-bottom.png') repeat-x center bottom;
+		width: 100%;
+		height: 20px;
+		position:absolute;
+		bottom: -15px;
+		left: 0px;
+	}
+
+	input, textarea{
+		font-family: 'Chelseamarket',  Arial, sans-serif;
+		border: none;
+		box-shadow: none;
+    	background: #f9f7f7;
+    	border-radius: 3px;
+
+		&.heading{
+			font-size: rem-calc(20);
+		}
+	}
+
+	textarea{
+	    min-height: 70px;
+	}
+}
+
+.close-reveal-modal.button.function-button{
+	padding: 5px 10px;
+	right: 20px;
+	top: 20px;
+
+	i{
+		&.fa-times{
+			color: $white;
+			font-weight: 100;
+			font-size: rem-calc(16);
+		}
+	}
+}
+
+.insert-item{
+	background: none;
+    color: #353534;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    min-height: 90px;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+
+    &:last-child{
+    	margin-right: 0;
+    }
+
+	.inside-item{
+		background-color: #f1e8e8;
+		min-height: 80px;
+		border-radius: 3px;.
+		padding: 10px;
+		padding-top: 5px;
+
+		img{
+			width: 25px;
+			padding-top: 10px;
+			padding-bottom: 15px;
+		}
+
+		&.active{
+			background-color: $secondary-color;
+			color: $white;
+
+			p{
+				color: $white;
+			}
+		}
+
+		p{
+			position: absolute;
+			font-family: 'Chelseamarket',  Arial, sans-serif;
+			color: $primary-color;
+			margin-bottom: 0;
+			bottom: 30px;
+			padding-left: 3%;
+		}
+	}
+}
+
+.single-panel{
+	padding: 10px 20px 0 5px;
+	margin: 30px 10px 30px 0;
+
+	img{
+		width: 25px;
+	}
+
+	&:before{
+		    margin-left: -6px;
+	}		
+
+	.editable-option-container{
+		padding: 10px 0 0 15px;
+
+		.editable-options{
+			a{
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.image-preview{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	.inside-item{
+		min-height: 100px;
+		padding-top: 10px;
+
+		p{
+			position: inherit;
+			padding-left: 0;
+		}
+	}
+	
+}

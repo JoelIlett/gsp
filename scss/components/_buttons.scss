@@ -1,0 +1,59 @@
+/*** Button styles ***/
+
+.button{
+	font-weight: 100;
+	font-family: 'Chelseamarket',  Arial, sans-serif;
+	border-radius: 3px;
+
+	&.primary{
+		background-color: $primary-color;
+	}
+
+	&.secondary{
+		background-color: $secondary-color;
+	}
+
+	&.tertiary{
+		background-color: $white;
+		color: $secondary-color;
+		span{
+			color: $primary-color;
+		}
+	}
+
+	&.function-button{
+		background-color: $iron;
+		padding: 3px 12px;
+		font-size: rem-calc(12);
+		margin-bottom: 0px;
+	}
+
+	&.add-new{
+		background-color: #25e28a;
+		width: 50%;
+	    margin: 0 auto;
+	    display: block;
+	    margin-bottom: 30px;
+	    margin-top: 30px;
+	    padding: 10px;
+	    font-size: rem-calc(17);
+	    font-weight: 100;
+	}
+
+	&.tag-cloud{
+		padding: 4px 12px;
+		font-weight: 100;
+		font-family: 'museo-thin',  Arial, sans-serif;
+	}
+
+	&.modal-button{
+		background-color: $iron;
+		font-size: rem-calc(16);
+		padding: 3px 10px;
+	}
+
+	&.upload-button{
+		background-color: $secondary-color;
+		padding: 10px 15px;
+	}
+}

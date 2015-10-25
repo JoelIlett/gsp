@@ -1,0 +1,58 @@
+/*** Header styles***/
+header{
+	background: url(../images/horizontal-edge.png)repeat-x center top;
+	background-size: auto 45px;
+
+	.contain-to-grid{
+		background: none;
+
+		.top-bar{
+			padding: 0 20px;
+			background: none;
+
+			.top-bar-section ul li{
+				margin-left: 20px;
+
+				&:first-child{
+					margin-left: 0;
+				}
+			}
+
+			.top-bar-section ul li,
+			.top-bar-section ul li a,
+			.top-bar-section ul li.active a{
+				background: none;
+
+				&:hover{
+					background: none;
+				}
+			}
+
+			.top-bar-section ul li a{
+				font-family: 'Chelseamarket',  Arial, sans-serif;
+				color: $white;
+				text-transform: uppercase;
+				font-size: rem-calc(16);
+				font-weight: 100;
+			}
+
+			.top-bar-section ul li.active a{
+				color: $secondary-color;
+			}
+
+			.top-bar-section ul li a:hover,
+			.top-bar-section ul li.active a:hover{
+				color: $secondary-color;
+			}
+
+			.logo-name{
+				position: absolute;
+				left: -9999px;
+			}
+
+			.logo{
+				width: 250px;
+			}
+		}
+	}
+}
